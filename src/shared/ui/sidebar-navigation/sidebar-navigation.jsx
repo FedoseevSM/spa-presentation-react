@@ -1,6 +1,6 @@
-import { Nav } from "@shared/ui"
-
 import { Button, Space } from 'antd';
+
+import { Nav } from "@shared/ui"
 
 export const SidebarNavigation = () => {
   return (

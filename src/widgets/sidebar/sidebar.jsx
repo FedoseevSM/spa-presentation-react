@@ -1,4 +1,5 @@
 import { Divider } from "antd";
+
 import { SlideFrame, SidebarMenu, SidebarNavigation } from "@shared/ui";
 
 import "./sidebar.css";

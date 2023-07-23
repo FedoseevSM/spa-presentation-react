@@ -1,17 +1,13 @@
 import React from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import { Sidebar } from "@widgets";
-
-import { pages } from "@shared/config";
-
-import { Nav } from "@shared/ui";
-import { useBinaryState } from "@shared/lib/hooks";
-
+import { Button } from "antd";
 import { UpOutlined, DownOutlined } from "@ant-design/icons";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
-import { Button } from "antd";
 
-import { BaseButton } from "@shared/ui";
+import { Sidebar } from "@widgets";
+import { pages } from "@shared/config";
+import { Nav, BaseButton } from "@shared/ui";
+import { useBinaryState } from "@shared/lib/hooks";
 
 import "./base-layout.css";
 
@@ -36,7 +32,6 @@ export const BaseLayout = () => {
     setLoading(true);
     setTimeout(
       () => {
-        console.log(scroller.current);
         if (scroller.current) {
           scroller.current.classList.add("glowing");
         }

@@ -3,19 +3,20 @@
     defaultExtension: true,
     meta: {
       "*.css": {
-        loader: "css",
+        loader: "plugin-css",
       },
     },
+    transpiler: "plugin-babel",
     babelOptions: {
       react: true,
     },
     map: {
       "plugin-babel": "lib/systemjs/plugins/plugin-babel/plugin-babel.js",
+      "plugin-css": "lib/systemjs/plugins/plugin-css/css.js",
       "systemjs-babel-build":
         "lib/systemjs/plugins/plugin-babel/systemjs-babel-browser.js",
       react: "lib/react/react.production.min.js",
       "react-dom": "lib/react/react-dom.production.min.js",
-      css: "lib/systemjs/plugins/plugin-css/css.js",
       classnames: "lib/classnames/index.min.js",
       "react-router-dom": "lib/@remix-run/react-router-dom/react-router-dom.production.min.js",
       "react-router": "lib/@remix-run/react-router/react-router.production.min.js",
@@ -28,7 +29,6 @@
       "react-dnd-html5-backend": "lib/react-dnd-html5-backend/ReactDnDHTML5Backend.min.js",
       "immutability-helper": "lib/immutability-helper/index.min.js"
     },
-    transpiler: "plugin-babel",
   })
   SystemJS.config({
     map: {

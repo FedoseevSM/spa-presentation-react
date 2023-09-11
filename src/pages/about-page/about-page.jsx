@@ -1,3 +1,4 @@
+import React from "react"
 import { Body } from "@widgets";
 
 import "./about-page.css";

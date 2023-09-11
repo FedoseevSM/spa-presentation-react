@@ -1,3 +1,4 @@
+import React from "react"
 import { Divider } from "antd";
 
 import { SlideFrame, SidebarMenu, SidebarNavigation } from "@shared/ui";

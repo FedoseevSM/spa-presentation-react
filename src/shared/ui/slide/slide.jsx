@@ -1,3 +1,4 @@
+import React from "react"
 import "./slide.css";
 
 export const Slide = ({ children, style }) => {

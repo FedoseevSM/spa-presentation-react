@@ -1,4 +1,4 @@
-( function() {
+(function () {
   SystemJS.config({
     defaultExtension: true,
     meta: {
@@ -8,7 +8,7 @@
     },
     transpiler: "plugin-babel",
     babelOptions: {
-      react: true,
+      react: true
     },
     map: {
       "plugin-babel": "lib/systemjs/plugins/plugin-babel/plugin-babel.js",
@@ -38,7 +38,7 @@
       "@shared/config": "src/shared/config/index.js",
       "@app": "src/app/index.js",
       "@features": "src/features/index.js",
-      "@pages": "src/pages/index.js", 
+      "@pages": "src/pages/index.js",
       "@widgets": "src/widgets/index.js",
       "@widgets/body": "src/widgets/body/index.js",
       "@widgets/header": "src/widgets/header/index.js",

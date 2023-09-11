@@ -1,6 +1,7 @@
+import React from "react"
 import { useLocation } from "react-router-dom";
 
-import { HomeMenu } from "@widgets/header";
+import { HomeMenu } from "./index.js";
 
 export const Header = ({params}) => {
   let location = useLocation();
